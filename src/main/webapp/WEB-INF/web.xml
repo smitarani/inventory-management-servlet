@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+ 
+
+ <servlet>
+      <servlet-name>deleteItem</servlet-name>
+      <servlet-class>servlets.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>deleteItem</servlet-name>
+      <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+   <servlet>
+      <servlet-name>CreateServlet</servlet-name>
+      <servlet-class>servlets.CreateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>CreateServlet</servlet-name>
+      <url-pattern>/inventoryCreate</url-pattern>
+  </servlet-mapping>
+    <servlet>
+      <servlet-name>updateBuy</servlet-name>
+      <servlet-class>servlets.UpdateBuyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>updateBuy</servlet-name>
+      <url-pattern>/updateInventory</url-pattern>
+  </servlet-mapping>
+   <servlet>
+      <servlet-name>updateSell</servlet-name>
+      <servlet-class>servlets.UpdateSellServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>updateSell</servlet-name>
+      <url-pattern>/updateSellInventory</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>inventoryReport</servlet-name>
+      <servlet-class>servlets.ReportServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>inventoryReport</servlet-name>
+      <url-pattern>/report</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
